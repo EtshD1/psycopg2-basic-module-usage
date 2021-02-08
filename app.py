@@ -17,6 +17,9 @@ cursor.execute('CREATE TABLE table1 (' + content + ');')
 cursor.execute('INSERT INTO table1 (id, completed) VALUES (%s,%s);', (1, True))
 cursor.execute(
     'INSERT INTO table1 (id, completed) VALUES (%s,%s);', (2, False))
+cursor.execute('INSERT INTO table1 (id, completed) VALUES (%s,%s);', (3, True))
+cursor.execute('INSERT INTO table1 (id, completed) VALUES (%s,%s);', (4, True))
+
 
 cursor.close()
 conn.close()
