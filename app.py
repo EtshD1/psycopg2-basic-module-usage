@@ -20,6 +20,7 @@ cursor.execute(
 cursor.execute('INSERT INTO table1 (id, completed) VALUES (%s,%s);', (3, True))
 cursor.execute('INSERT INTO table1 (id, completed) VALUES (%s,%s);', (4, True))
 
+conn.commit()
 
 cursor.close()
 conn.close()
