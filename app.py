@@ -1,5 +1,7 @@
 import psycopg2
 
+# Connecting to a localhost database with
+# Name: test1, user:etsh, password:3894
 conn = psycopg2.connect(
     "host=127.0.0.1 dbname=test1 user=etsh password=3894")
 
