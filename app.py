@@ -20,7 +20,11 @@ cursor.execute(
 cursor.execute('INSERT INTO table1 (id, completed) VALUES (%s,%s);', (3, True))
 cursor.execute('INSERT INTO table1 (id, completed) VALUES (%s,%s);', (4, True))
 
+cursor.execute('SELECT * FROM table1 WHERE completed = True')
+fetchedData = cursor.fetchall()
+
 conn.commit()
+print(fetchedData)
 
 cursor.close()
 conn.close()
